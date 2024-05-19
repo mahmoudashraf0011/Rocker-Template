@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- title -->
+    <title>Furniture</title>
+    <!-- meta -->
+
+    <meta name="keywords" content="css,html,htm5,css3" />
+    <meta name="description" content="Furniture" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- files -->
+    <link rel="icon" type="image/x-icon" href="images/mylogo.jpg" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <img src="images/logo.png" alt="" class="logo" />
+          <div class="navbar">
+            <ul class="nav-ul">
+              <li class="furniture">
+                <a href="#">Furniture</a>
+                <div class="furniture-content">
+                  <ul>
+                    <li class="title"><a href="#">Tables</a></li>
+                    <li><a href="#">Study Table</a></li>
+                    <li><a href="#">Coffee Table</a></li>
+                    <li><a href="#">Stools</a></li>
+                    <li><a href="#">Writing Desk</a></li>
+                  </ul>
+                  <ul>
+                    <li class="title"><a href="#">Dining</a></li>
+                    <li><a href="#">Dining Chairs</a></li>
+                    <li><a href="#">Bar Stools</a></li>
+                    <li><a href="#">Benches</a></li>
+                    <li><a href="#">Dining Table</a></li>
+                  </ul>
+                  <ul>
+                    <li class="title"><a href="#">Sofas</a></li>
+                    <li><a href="#">Armchairs</a></li>
+                    <li><a href="#">Day Beds</a></li>
+                    <li><a href="#">Poufs</a></li>
+                    <li><a href="#">Lounge Chairs</a></li>
+                  </ul>
+                </div>
+                <!-- /furniture-content -->
+              </li>
+              <li><a href="#">Armoires</a></li>
+              <li><a href="#">Study Table</a></li>
+              <li class="plastic">
+                <a href="#">Plastic Chair</a>
+                <div class="plastic-content">
+                  <ul>
+                    <li><a href="#">Bookshelves</a></li>
+                    <li><a href="#">Cupboards</a></li>
+                    <li><a href="#">Show Racks</a></li>
+                  </ul>
+                </div>
+                <!-- /plastic-content -->
+              </li>
+              <li><a href="#">Wardrobes</a></li>
+              <li class="more">
+                <a href="#">More</a>
+                <div class="more-content">
+                  <ul>
+                    <li><a href="#">Office Chairs</a></li>
+                    <li><a href="#">Wooden Chair</a></li>
+                    <li><a href="#">Blogs</a></li>
+                  </ul>
+                </div>
+                <!-- /more-content -->
+              </li>
+            </ul>
+            <!-- /nav-ul -->
+          </div>
+          <!-- /navbar -->
+          <div class="login">
+            <ul class="login-ul">
+              <li href="#" class="search">
+                <i
+                  onclick="funcSearch();"
+                  class="icon1 fa fa-search fa-2x"
+                  id="i-open"
+                ></i>
+                <i
+                  onclick="closeSearch();"
+                  class="icon2 fa fa-times fa-2x"
+                  id="i-close"
+                ></i>
+                <div class="search-content" id="mysearch">
+                  <input
+                    type="search"
+                    placeholder="  Search Products Here...."
+                  />
+                  <i class="fa fa-search"></i>
+                </div>
+              </li>
+
+              <li href="#" class="user">
+                <i
+                  class="user-i fa fa-user-o fa-2x"
+                  onclick="userfunc();"
+                  ondblclick="closeuser();"
+                ></i>
+                <div class="user-content" id="users">
+                  <ul class="user-menu">
+                    <li><a href="">Register</a></li>
+                    <li><a href="">login</a></li>
+                    <li><a href="">With List (0)</a></li>
+                    <li><a href="">Shopping Cart</a></li>
+                    <li><a href="">Checkout</a></li>
+                  </ul>
+                  <!-- /user-menu -->
+                  <div class="user-lang">
+                    <div class="main-lang">
+                      <h3>LANGUAGE</h3>
+                      <a><i class="lang fa fa-etsy"></i></a>
+                    </div>
+                    <!-- /main-lang -->
+                    <div class="langs">
+                      <div class="eng">
+                        <a><i class="en fa fa-etsy"></i></a>
+                        <h5>English</h5>
+                      </div>
+                      <!-- /eng -->
+                      <div class="arb">
+                        <a><i class="ar fa fa-amazon"></i></a>
+                        <h5>Arabic</h5>
+                      </div>
+                      <!-- /arb -->
+                    </div>
+                    <!-- /langs -->
+                  </div>
+                  <!-- /user-lang -->
+                  <div class="currency">
+                    <div class="main-currency">
+                      <h3>currency</h3>
+                      <a><i class="fa fa-dollar"></i></a>
+                    </div>
+                    <!-- /main-currency -->
+                    <ul class="coins">
+                      <a><i class="fa fa-dollar"></i></a>
+                      <a><i class="fa fa-euro"></i></a>
+                      <a><i class="fa fa-gbp"></i></a>
+                    </ul>
+                  </div>
+                  <!-- /currency -->
+                </div>
+                <!-- /user-content -->
+              </li>
+              <li href="#" class="bag">
+                <i
+                  class="fa fa-shopping-bag fa-2x"
+                  onclick="bagfunc();"
+                  ondblclick="closebag();"
+                ></i>
+                Your Bag
+                <div class="bag-content" id="mybag">
+                  <p class="bag-desc">Your Shopping Cart Is Empty!</p>
+                </div>
+              </li>
+            </ul>
+            <!-- /login-ul -->
+          </div>
+          <!-- /login -->
+        </div>
+        <!-- /header-content -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /header -->
+
+    <!-- main section -->
+    <section class="main-img">
+      <div class="container">
+        <div class="icon-img" id="myimg">
+          <div class="img-content">
+            <div class="arrows">
+              <ul>
+                <li href="#" class="left">
+                  <i
+                    class="arrow1 fa fa-arrow-left fa-2x"
+                    onclick="leftside();"
+                  ></i>
+                </li>
+                <li href="#" class="right">
+                  <i
+                    class="arrow2 fa fa-arrow-right fa-2x"
+                    id="myright"
+                    onclick="rightside();"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+            <!-- /arrows -->
+            <div class="bullts">
+              <ul>
+                <i onclick="leftside();"
+                  ><li class="active" id="leftball"></li
+                ></i>
+                <i onclick="rightside();"><li id="rightball"></li></i>
+              </ul>
+            </div>
+            <!-- /bullts -->
+          </div>
+          <!--/img-content -->
+        </div>
+        <!-- /icon-img -->
+      </div>
+      <!-- /container -->
+    </section>
+    <!-- /section -->
+
+    <!-- Special Category -->
+    <section class="catagory pd-y">
+      <div class="section-header">
+        <h2 class="section-title">Special Category</h2>
+        <span class="main-line"></span>
+      </div>
+      <!-- /section-header -->
+      <div class="container pd-y">
+        <div class="catagory-items">
+          <div class="catagory-item">
+            <div class="catagory-img">
+              <img src="images/c1.jpg" alt="" />
+            </div>
+            <!-- /catagory-img -->
+            <div class="catagory-info">
+              <h5 class="catagory-desc">Most Popular</h5>
+              <h4 class="catagory-title">Classic Chair Collection</h4>
+              <li href="#"><i class="fa fa-arrow-right"></i></li>
+            </div>
+            <!-- /catagory-info -->
+          </div>
+          <!-- /catagory-item -->
+          <div class="catagory-item">
+            <div class="catagory-img">
+              <img src="images/c1.jpg" alt="" />
+            </div>
+            <!-- /catagory-img -->
+            <div class="catagory-info">
+              <h5 class="catagory-desc">Most Popular</h5>
+              <h4 class="catagory-title">Wooden Chair Collection</h4>
+              <li href="#"><i class="fa fa-arrow-right"></i></li>
+            </div>
+            <!-- /catagory-info -->
+          </div>
+          <!-- /catagory-item -->
+          <div class="catagory-item">
+            <div class="catagory-img">
+              <img src="images/c1.jpg" alt="" />
+            </div>
+            <!-- /catagory-img -->
+            <div class="catagory-info">
+              <h5 class="catagory-desc">Most Popular</h5>
+              <h4 class="catagory-title">Study Chair Collection</h4>
+              <li href="#"><i class="fa fa-arrow-right"></i></li>
+            </div>
+            <!-- /catagory-info -->
+          </div>
+          <!-- /catagory-item -->
+          <div class="catagory-item">
+            <div class="catagory-img">
+              <img src="images/c1.jpg" alt="" />
+            </div>
+            <!-- /catagory-img -->
+            <div class="catagory-info">
+              <h5 class="catagory-desc">Most Popular</h5>
+              <h4 class="catagory-title">Tool Chair Collection</h4>
+              <li href="#"><i class="fa fa-arrow-right"></i></li>
+            </div>
+            <!-- /catagory-info -->
+          </div>
+          <!-- /catagory-item -->
+        </div>
+        <!-- /catagory-items -->
+        <!-- Discount -->
+        <div class="discount pd-y">
+          <div class="discount-info">
+            <li href="#"><i class="fa fa-quote-left fa-5x"></i></li>
+            <div class="discount-legend">
+              <h3 class="discount-maker" id="maker">Penelope Astrid</h3>
+              <h4 class="discount-jop" id="jop">(Marketing)</h4>
+            </div>
+            <!-- /discount-legend -->
+            <p class="discount-desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has text Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum is simply dummy
+              text of the printing and typesetting industry.
+            </p>
+            <div class="bullts-line">
+              <i class="active" id="bl1" onclick="firstD()"></i>
+              <i id="bl2" onclick="secondD()"></i>
+              <i id="bl3" onclick="thirdD()"></i>
+            </div>
+            <!-- /bullts-line -->
+          </div>
+          <!-- /discount-info -->
+          <div class="discount-item">
+            <div class="item-img">
+              <img src="images/d1.jpg" alt="" />
+            </div>
+            <div class="discount-item-data">
+              <h3 class="discount-item-value">30% Discount</h3>
+              <h2 class="discount-item-title">Designing Interior</h2>
+            </div>
+            <!-- /discount-item-data -->
+          </div>
+          <!-- /discount-item -->
+          <div class="discount-item">
+            <div class="item-img">
+              <img src="images/d2.jpg" alt="" />
+            </div>
+            <div class="discount-item-data">
+              <h3 class="discount-item-value">20% Discount</h3>
+              <h2 class="discount-item-title">Wooden Study Table</h2>
+            </div>
+            <!-- /discount-item-data -->
+          </div>
+          <!-- /discount-item -->
+        </div>
+        <!-- /discount -->
+        <!-- sprites -->
+        <div class="sprites pd-y">
+          <div class="sprite">
+            <div class="sprite-icon sprite-icon1"></div>
+            <div class="sprite-desc">
+              <h3 class="sprite-title">Free Delivery</h3>
+              <h5 class="sprite-span">Free Shipping On All Order</h5>
+            </div>
+            <!-- /sprite-desc -->
+          </div>
+          <!-- /sprite -->
+          <div class="sprite">
+            <div class="sprite-icon sprite-icon2"></div>
+            <div class="sprite-desc">
+              <h3 class="sprite-title">Money Return</h3>
+              <h5 class="sprite-span">Back Guarantee in 7 days</h5>
+            </div>
+            <!-- /sprite-desc -->
+          </div>
+          <!-- /sprite -->
+          <div class="sprite">
+            <div class="sprite-icon sprite-icon3"></div>
+            <div class="sprite-desc">
+              <h3 class="sprite-title">Member Discount</h3>
+              <h5 class="sprite-span">On every order over $130.00</h5>
+            </div>
+            <!-- /sprite-desc -->
+          </div>
+          <!-- /sprite -->
+          <div class="sprite">
+            <div class="sprite-icon sprite-icon4"></div>
+            <div class="sprite-desc">
+              <h3 class="sprite-title">Online Support</h3>
+              <h5 class="sprite-span">Support 24 hours a day</h5>
+            </div>
+            <!-- /sprite-desc -->
+          </div>
+          <!-- /sprite -->
+          <div class="sprite">
+            <div class="sprite-icon sprite-icon5"></div>
+            <div class="sprite-desc">
+              <h3 class="sprite-title">Return Policy</h3>
+              <h5 class="sprite-span">Send within 30 days</h5>
+            </div>
+            <!-- /sprite-desc -->
+          </div>
+          <!-- /sprite -->
+        </div>
+        <!-- /sprites -->
+        <hr />
+      </div>
+      <!-- container -->
+    </section>
+    <!-- /catagory-->
+
+    <!-- products -->
+    <section class="products pd-y">
+      <div class="section-header">
+        <h2 class="section-title">Featured Products</h2>
+        <span class="main-line"></span>
+      </div>
+      <!-- /section-header -->
+      <ul class="products-list">
+        <li><a href="#" class="active">Wooden Chair</a></li>
+        <li><a href="#">Plastic Chair</a></li>
+        <li><a href="#">Study Chair</a></li>
+        <li><a href="#">Tool Chair</a></li>
+      </ul>
+      <div class='container'>
+        <div class="products-items">
+          <div class="products-item">
+            <img src="images/p1.jpg" alt="" class="main-img" />
+            <div class="products-overlay">
+              <img src="images/p11.jpg" alt="" class="hidden-img"/>
+              <div class="products-name">
+                <p>Aliquam Quaerat</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <li href="#" class="arrow arrow-left"><i class="active fa fa-arrow-left fe-sm"></i></li>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Aliquam Quaerat</span>
+                <h3 class="products-price">$108.80</h3>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->          
+          <div class="products-item">
+            <img src="images/p2.jpg" alt="" class="main-img" />
+            <div class="products-free">
+              <p>8% off</p>
+            </div> <!-- /products-free -->
+            <div class="products-overlay">
+              <img src="images/p22.jpg" alt="" class="hidden-img"/>
+              <div class="products-sale">
+                <p>Sale</p>
+              </div> <!-- /products-sale -->
+              <div class="products-name">
+                <p>Consequatur Hampden</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Consequatur Hampden</span>
+                <h3 class="products-price">$110.00</h3>
+                <h4 class="products-price-after">$119.80</h4>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->
+          <div class="products-item">
+            <img src="images/p3.jpg" alt="" class="main-img" />
+            <div class="products-overlay">
+              <img src="images/p33.jpg" alt="" class="hidden-img"/>
+              <div class="products-name">
+                <p>Laborum event</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <li href="#" class="arrow arrow-right"><i class="active fa fa-arrow-right fe-sm"></i></li>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Laborum Event</span>
+                <h3 class="products-price">$97.99</h3>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->
+          <div class="products-item">
+            <img src="images/p4.jpg" alt="" class="main-img" />
+            <div class="products-free">
+              <p>2% off</p>
+            </div> <!-- /products-free -->
+            <div class="products-overlay">
+              <img src="images/p44.jpg" alt="" class="hidden-img"/>
+              <div class="products-sale">
+                <p>Sale</p>
+              </div> <!-- /products-sale -->
+              <div class="products-name">
+                <p>Commodi Consequatur</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Commodi Consequatur</span>
+                <h3 class="products-price">$134.00</h3>
+                <h4 class="products-price-after">$136.60</h4>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->          
+          <div class="products-item">
+            <img src="images/p5.jpg" alt="" class="main-img" />
+            <div class="products-free">
+              <p>11% off</p>
+            </div> <!-- /products-free -->
+            <div class="products-overlay">
+              <img src="images/p55.jpg" alt="" class="hidden-img"/>
+              <div class="products-sale">
+                <p>Sale</p>
+              </div> <!-- /products-sale -->
+              <div class="products-name">
+                <p>Exercitat Virginia</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                  <li href="#"><i class="fa fa-star-o fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Exercitat Virginia</span>
+                <h3 class="products-price">$104.00</h3>
+                <h4 class="products-price-after">$116.20</h4>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->
+          <div class="products-item">
+            <img src="images/p6.jpg" alt="" class="main-img" />
+            <div class="products-free">
+              <p>6% off</p>
+            </div> <!-- /products-free -->
+            <div class="products-overlay">
+              <img src="images/p66.jpg" alt="" class="hidden-img"/>
+              <div class="products-sale">
+                <p>Sale</p>
+              </div> <!-- /products-sale -->
+              <div class="products-name">
+                <p>Landuant Doloremque</p>
+              </div> <!-- /products-name -->
+              <ul class="img-list">
+                <li href="#" class="heart"><i class="fa fa-heart-o fe-sm"></i>
+                  <div class="heart-desc">
+                    <p>Add to Wish List</p>
+                  </div> <!-- /heart-desc-->
+                </li>
+                <li href="#" class="eye"><i class="fa fa-eye fa-sm"></i>
+                  <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+                </li>
+                <li href="#" class="sublist"><i class="fa fa-align-right fa-sm"></i>
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->            
+                </li>
+                <li href="#" class="cart"><i class="fa fa-shopping-cart fa-sm"></i> 
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
+                </li>
+              </ul>
+            </div>
+            <!-- /products-overlay -->
+            <div class="products-info">
+                <ul class="products-star">
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                  <li href="#"><i class="active fa fa-star fe-sm"></i></li>
+                </ul>
+                <span class="products-span">Landuant Doloremque</span>
+                <h3 class="products-price">$92.00</h3>
+                <h4 class="products-price-after">$98.00</h4>
+            </div>
+            <!-- /products-info -->
+          </div>
+          <!-- /products-item -->
+        </div>
+        <!-- /products-items -->
+
+        <!-- products-scenes-->
+        <div class="products-scenes pd-y">
+          <div class="products-scene1">
+            <div class="scene-img">
+              <i onclick="showVideo()"><img src="images/play.PNG" alt=""></i>
+            </div> <!-- /secene-img -->
+          </div> <!-- /products-scene-->
+          <div class="products-scene2">
+            <div class="scene-date">
+              <h2 class="scene-day">28</h2>
+              <span class="scene-localDate">February, 2018</span>
+            </div> <!-- /scene-date -->
+            <div class='scene-title'>
+              <h2 class='scene-title-name' id="myname">Necessitatibus Saepe Eveniet</h2>
+            </div><!-- /scene-title-->
+            <p class="scene-desc" id="mydesc">
+              The standard Lorem Ipsum passage, used since the 1500s"Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur ...  
+            </p>
+            <div class="bullts-line2">
+              <i class="active" id="bl11" onclick="firstS()"></i>
+              <i id="bl22" onclick="secondS()"></i>
+              <i id="bl33" onclick="thirdS()"></i>
+            </div>
+            <!-- /bullts-line2 -->
+            <!--video-->
+            <div class="main-video" id="myvideo">
+              <video width="800" height="500" class="products-video"controls>
+                <source src="videos/video.mp4" type="video/mp4">
+                <source src="videos/video.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+              <li class="close"><i onclick="closeVideo()" class=" fa fa-close fa-2x"></i></li>
+            </div>
+          </div> <!-- /products-scene-->
+        </div> <!-- /products-scenes-->
+        <!--products-images-->
+        <div class="products-images pd-y">
+          <ul class="products-images-ul ">
+            <li><img src="images/client1.png" alt=""></li>
+            <li><img src="images/client2.png" alt=""></li>
+            <li><img src="images/client3.png" alt=""></li>
+            <li><img src="images/client4.png" alt=""></li>
+            <li><img src="images/client5.png" alt=""></li>
+            <li><img src="images/client6.png" alt=""></li>
+          </ul>  <!--/products-images-->
+      </div class='container'> <!-- /container -->
+    </section>
+    <!-- /products -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-items">
+          <div class="footer-item">
+            <li><img src="images/footer-logo.png" alt=""></li>
+            <p class="footer-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               LoremIpsum has been the industry's standard dummy text ever since the 1500s,
+                Lorem Ipsum is simply dummy.</p>
+            <div class="footer-download">
+              <li><img src="images/cms-footer-1.png" alt=""></li>
+              <li><img src="images/cms-footer-2.png" alt=""></li>
+            </div> <!-- /footer-download -->
+          </div> <!-- /footer-item -->
+          <div class="footer-item">
+            <ul class="footer-info">
+              <li  class="footer-title"><a href="#">Information</a></li>
+              <li><a href="#">About US</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div> <!-- /footer-item -->
+          <div class="footer-item">
+            <ul class="footer-account">
+              <li class="footer-title"><a href="#">My Account</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div> <!-- /footer-item -->
+        <div class="footer-item">
+            <li class="footer-title"><a href="#">Subscribe Now</a></li>
+            <input type="email" placeholder="  Enter Your Email Address">
+            <ul class="footer-subscribe">
+              <li href=""><i class="fa fa-facebook fa-lg"></i></li>
+              <li href=""><i class="fa fa-twitter fa-lg"></i></li>
+              <li href=""><i class="fa fa-youtube-play fa-lg"></i></li>
+              <li href=""><i class="fa fa-google-plus fa-lg"></i></li>
+              <li href=""><i class="fa fa-instagram fa-lg"></i></li>
+            </ul>
+        </div> <!-- /footer-item -->
+        </div> <!-- /footer-items -->
+        <hr>
+        <div class="footer-finish">
+          <div class="finish">
+            <p>COPYRIGHT &copy; 2022.ALL RIGHTS RESERVED.DESIGNED BY <span>MAGIKO</span></p>
+          </div> <!-- /finish -->
+          <div class="finish">
+            <ul>
+              <li><img src="images/visa.png" alt=""></li>
+              <li><img src="images/american_express.png" alt=""></li>
+              <li><img src="images/master_card.png" alt=""></li>
+              <li><img src="images/wallet.png" alt=""></li>
+            </ul>
+          </div> <!-- /finish -->
+        </div> <!-- /footer-finish -->
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>

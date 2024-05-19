@@ -1,0 +1,11 @@
+                 <div class="eye-desc">
+                    <p>Quick View</p>
+                  </div> <!-- /eye-desc-->
+
+                  <div class="list-desc">
+                    <p>Add to Compare</p>
+                  </div> <!-- /list-desc-->   
+
+                  <div class="cart-desc">
+                    <p>Add to cart</p>
+                  </div> <!-- /cart-desc-->  
